@@ -44,19 +44,9 @@ int longestMountain(int* arr, int arrSize) {
                 }
             }
         }
-        printf("left: %d, right: %d, length: %d, mountain: %d, max: %d\n", left, right, right - left, mountain, max);
     }
     
     if (mountain == 1 && (right - left + 1) > max)
         max = right - left + 1;
     return max;
 }
-
-/*
-
-mountain:
-    -1 -> 산 아님
-    0 -> 오르막
-    1 -> 내리막
-
-*/
